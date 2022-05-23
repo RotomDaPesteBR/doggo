@@ -68,10 +68,10 @@ function Home() {
                                     <ul className={styles.list}>
                                         <li>
                                             <button onClick={()=>updateImgUrl()} className={styles.items} style={stylesheet.topbutton}>
-                                                Gerar Cachorro
+                                                Gerar Nova Imagem
                                             </button>
                                         </li>
-                                        <li><a href='./listagem' className={styles.itemstext}><button className={styles.items}  >Listagem</button></a></li>
+                                        <li><a href='./paginacao' className={styles.itemstext}><button className={styles.items}>Paginação</button></a></li>
                                         <li><a href='./racas' className={styles.itemstext}><button className={styles.items}>Raças</button></a></li>
                                         <li><a href='./categorias' className={styles.itemstext}><button className={styles.items} style={stylesheet.bottombutton}>Categorias</button></a></li>
                                     </ul>

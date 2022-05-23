@@ -11,7 +11,7 @@ export default function MainNavbar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="./">Início</Nav.Link>
-              <Nav.Link href="./listagem">Listagem</Nav.Link>
+              <Nav.Link href="./paginacao">Paginação</Nav.Link>
               <Nav.Link href="./racas">Raças</Nav.Link>
               <Nav.Link href="./categorias">Categorias</Nav.Link>
             </Nav>
