@@ -98,7 +98,7 @@ export default function Home(){
                                             <input type="number" value={page} onChange={e=>setPage(e.target.value)} className={styles.page}></input>
                                             </Col>  
                                             <Col>
-                                            <button onClick={()=>setPage(page + 1)} className={styles.items}>
+                                            <button onClick={()=>setPage(parseInt(page, 10) + 1)} className={styles.items}>
                                             {">"} 
                                             </button> 
                                             </Col> 
