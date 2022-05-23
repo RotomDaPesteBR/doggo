@@ -45,6 +45,14 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
+    overflow: auto;
+    max-height: 95%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.paginador::-webkit-scrollbar {
+    display: none;
 }
 
 .busca {
