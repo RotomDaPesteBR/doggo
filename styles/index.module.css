@@ -45,6 +45,14 @@
     list-style: none;   
     text-align: center;
     width: 100%;
+    overflow: auto;
+    max-height: 95%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
 }
 
 .items {
