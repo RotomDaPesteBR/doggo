@@ -156,9 +156,7 @@ export default function Home(){
                                     </button>
                                 </div>
                             </Row>
-                            <Row className={styles.space}>
-                                
-                            </Row>
+                            
                             <Row className={styles.infoBox} style={stylesheet.infoBox}>
                                <Row style={stylesheet.infoRow}>
                                     <h5>{nome}:</h5>

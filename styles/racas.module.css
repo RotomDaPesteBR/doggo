@@ -101,8 +101,8 @@
 }
 
 .infoBox {
-    height: 10%;
-    width: 100%;
+    height: 180px;
+    width: calc(50% - 20px);
     margin: 0;
     text-align: center;
     background-color: white;
@@ -112,6 +112,9 @@
     overflow: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    position: absolute;
+    right: 10px;
+    bottom: 110px;
 }
 
 .infoBox::-webkit-scrollbar {
