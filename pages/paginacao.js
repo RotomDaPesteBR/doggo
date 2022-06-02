@@ -52,7 +52,7 @@ export default function Home(){
     }
 
     function changePage(number) {
-        pageNumber = number;
+        pageNumber = number + 1;
         setPage(pageNumber);
         updateImgUrl();
     }
