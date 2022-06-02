@@ -58,7 +58,7 @@ export default function Home(){
     }
 
     function updateImgUrl(){
-        const url = URL_TO_FETCH + (page+1) + "&order=DESC";
+        const url = URL_TO_FETCH + (page-1) + "&order=DESC";
         console.log(url)
         fetch(url, Init)
           .then(function (response) {
