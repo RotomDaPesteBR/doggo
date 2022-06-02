@@ -81,3 +81,28 @@
     background-size: cover;
     background-image: url("https://i1.sndcdn.com/artworks-mycYYLyTxdpH5SPu-IZkvfg-t500x500.jpg");    
 }
+
+.info {
+    text-align: end;
+    filter: invert(100%);
+    height: 10%;
+}
+
+.infoButton {
+    background: none;
+    border: none;
+}
+
+.infoImg {
+    filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+}
+
+.infoBox {
+    height: 10%;
+    width: 100%;
+    margin-left: 0;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}

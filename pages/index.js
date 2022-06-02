@@ -1,9 +1,13 @@
 import styles from '../styles/index.module.css'
 import React, { useState, useEffect } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
+import Image from 'next/image'
+import infoIcon from '../assets/info.png'
 
 function Home() {
     const [imgUrl, setImgUrl] = useState("");
+    const [peso, setPeso] = useState("0");
+    const [infoVisible, setInfoVisible] = useState("none");
     const key = "f0ccfff3-cda6-4cf8-a3df-5bc0f465dcd5";
     var headers = new Headers();
     headers.append("x-api-key", key);
@@ -34,6 +38,14 @@ function Home() {
         bottombutton: {
             borderBottomLeftRadius: "5px",
             borderBottomRightRadius: "5px"
+        },
+
+        space: {
+            height: "80%",
+        },
+
+        infoBox: {
+            display: infoVisible,
         }
     }
 
@@ -54,6 +66,18 @@ function Home() {
               });
             
     }
+
+    function toogleInfoBox(){
+        
+        let toogle = infoVisible;
+        if(toogle == "none"){
+            toogle = "block";
+        }else{
+            toogle = "none";
+        }
+        setInfoVisible(toogle);
+    }
+
     return  <div className={styles.container}>
                 <div id="navbar" className={styles.navbar}></div>
                 <Container fluid>
@@ -78,7 +102,6 @@ function Home() {
                             </Row>
                         </Col>
                         <Col className={styles.col2} style={stylesheet.img}>
-                               
                             
                         </Col>
                     </Row>
@@ -89,7 +112,24 @@ function Home() {
 }
 
 export default Home
+/*
+                            <Row className={styles.info}>
+                               <div >
+                                    <button className={styles.infoButton} onClick={()=>toogleInfoBox()}>
+                                        <Image src={infoIcon} className={styles.infoImg} layout='fixed'  width={75} height={75}></Image>
+                                    </button>
+                                </div>
+                            </Row>
+                            <Row className={stylesheet.space}>
 
+                            </Row>
+                            <Row className={styles.infoBox} style={stylesheet.infoBox}>
+                               <div>
+                                    <h6>Raça:</h6>
+                                    Peso: {peso}
+                               </div>
+                            </Row>
+*/
 /*
                 import { Swiper, SwiperSlide } from 'swiper/react';
                 import { Navigation, Pagination, A11y , Autoplay} from 'swiper';
