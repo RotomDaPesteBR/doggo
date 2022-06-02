@@ -52,13 +52,13 @@ export default function Home(){
     }
 
     function changePage(number) {
-        pageNumber = number + 1;
+        pageNumber = number;
         setPage(pageNumber);
         updateImgUrl();
     }
 
     function updateImgUrl(){
-        const url = URL_TO_FETCH + page + "&order=DESC";
+        const url = URL_TO_FETCH + (page+1) + "&order=DESC";
         console.log(url)
         fetch(url, Init)
           .then(function (response) {
